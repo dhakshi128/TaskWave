@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskWave</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav-bar -->
+    <header>
+        <nav class="nav-container">
+            <ul class="list-items">
+                <li class="list-item"><a href="#">home</a></li>
+                <li class="list-item"><a href="#todo">todo</a></li>
+                <li class="list-item"><a href="#about">about</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Parallax for home -->
+     <section id="home" class="parallax home">
+        <h1>Welcome to Task Wave</h1>
+        <p>Keep track of your day</p>
+     </section>
+
+     <!-- To do section -->
+      <section id="todo">
+        <div class="container">
+            <h2>My To-do List</h2>
+            <form  id="task-form">
+                    <input type="text" id="task-input" placeholder="What's your plan dude?">
+                    <button type="submit">Let's do it</button>            
+            </form>
+        </div>
+        <ul id="task-list"></ul>
+        <div class="progress-container"></div>
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <div class="hidden" id="celebration">
+        <h2>🎉 Hurray!! Great Day Buddy!!🎉</h2>
+        </div>
+      </section>
+
+      <!-- Parallalx for about -->
+       <section id="about" class="parallax">
+        <h2>About Task Wave</h2>
+        <p>&copy Task Wave - Dhakshi</p>
+        <p>For any queries: taskwave@gmail.com</p>
+       </section>
+
+       <!-- script -->
+        <script src="script.js"></script>
+</body>
+</html>
